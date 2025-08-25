@@ -1,40 +1,4 @@
-// // src/components/ui/BarChart.jsx
-// 'use client'
 
-// import React from 'react'
-
-// const BarChart = ({ data, maxValue }) => {
-//   const chartMaxValue = maxValue || Math.max(...data.map(d => d.value))
-
-//   return (
-//     <div className="flex items-end justify-between h-full px-2">
-//       {data.map((item, index) => {
-//         const height = (item.value / chartMaxValue) * 80 // 80% of container height for bars
-//         return (
-//           <div key={index} className="flex flex-col items-center justify-end h-full space-y-2">
-//             <div 
-//               className="transition-all duration-300 cursor-pointer group rounded-t-[6px]"
-//               style={{ 
-//                 height: `${height}%`,
-//                 width: '20px',
-//                 minHeight: height > 0 ? '12px' : '4px',
-//                 background: '#A9DFD8',
-//                 boxShadow: '0 0 10px rgba(169, 223, 216, 0.3)'
-//               }}
-//             />
-//             <span className="text-gray-400 text-xs font-medium pb-2">{item.day}</span>
-//           </div>
-//         )
-//       })}
-//     </div>
-//   )
-// }
-
-// export default BarChart
-
-
-
-// src/components/ui/BarChart.jsx
 'use client'
 
 import React, { useState } from 'react'
